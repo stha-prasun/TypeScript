@@ -10,4 +10,15 @@ function signUpUser(name: string, email: string, age: number) {
 
 signUpUser("test", "email", 19);
 
+function loginUser(name: string, email: string): string {
+  //function return type String
+  return "Welcome Back User";
+}
+
+const heros = ["thor", "ironman", "cap"];
+
+heros.map((hero): string => {
+  return `Hello. ${hero}`;
+});
+
 export {};

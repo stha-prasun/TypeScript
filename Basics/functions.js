@@ -8,3 +8,7 @@ function signUpUser(name, email, age) {
     console.log(name, email, age);
 }
 signUpUser("test", "email", 19);
+function loginUser(name, email) {
+    //function return type String
+    return "Welcome Back User";
+}
