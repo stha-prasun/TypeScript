@@ -21,4 +21,14 @@ heros.map((hero): string => {
   return `Hello. ${hero}`;
 });
 
+const handleError = (err: string): void => {
+  //return type void
+  console.log(err);
+};
+
+function throwError(errorMsg: string): never {
+  //return type is never: The function will never return anything
+  throw new Error(errorMsg);
+}
+
 export {};

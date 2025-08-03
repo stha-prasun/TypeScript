@@ -12,3 +12,15 @@ function loginUser(name, email) {
     //function return type String
     return "Welcome Back User";
 }
+var heros = ["thor", "ironman", "cap"];
+heros.map(function (hero) {
+    return "Hello. ".concat(hero);
+});
+var handleError = function (err) {
+    //return type void
+    console.log(err);
+};
+function throwError(errorMsg) {
+    //return type is never: The function will never return anything
+    throw new Error(errorMsg);
+}
